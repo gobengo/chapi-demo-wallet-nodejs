@@ -1,0 +1,27 @@
+{
+  "name": "@data.pub/activitypub",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "import": "./index.ts"
+    }
+  },
+  "scripts": {
+    "test": "tsx --test",
+    "tsc": "tsc --build",
+    "prepare": "npm run tsc",
+    "start": "node --import tsx start.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  },
+  "dependencies": {
+    "@types/node": "^22.9.1",
+    "@types/serve-static": "^1.15.7",
+    "chapi-demo-wallet": "github:credential-handler/chapi-demo-wallet",
+    "serve-static": "^1.16.2"
+  }
+}
